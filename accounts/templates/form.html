@@ -1,0 +1,16 @@
+{% extends 'master.html' %}
+{%load crispy_forms_tags %}
+{% block content %}
+
+<p class="lead">
+Ensure you visit the "HOW TO UPLOAD" section to learn how to successfully upload files.
+</p>
+<form method="post"  enctype="multipart/form-data">
+    {% csrf_token %}
+
+    {{ form|crispy }}
+    <br>
+    <button class="btn btn-success">SUBMIT</button>
+</form>
+
+{% endblock %}

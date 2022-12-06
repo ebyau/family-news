@@ -1,0 +1,20 @@
+{% extends 'auth/authbase.html' %}
+
+{% block content %}
+
+<h2>How to Upload Files:</h2>
+
+  <form action="" method=POST>
+  {% csrf_token %}
+    {{ form.as_p }}
+    <button>SUBMIT</button>
+
+
+  </form>
+
+
+
+
+
+
+{% endblock %}

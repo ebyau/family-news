@@ -1,0 +1,22 @@
+{% extends 'auth/authbase.html'%}
+
+
+{% block content %}
+
+	<h1>REGISTER</h1>
+<br/>
+		<form action="" method=POST class="form-group">
+			{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-success">Register</button>
+
+        <br><br><br>
+
+        		<p class="text-center">
+        		Already have an account
+        			<a href="{% url 'login'%}">LOGIN</a>
+
+        		</p>
+
+    </form>
+{% endblock %}

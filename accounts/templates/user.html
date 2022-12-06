@@ -1,0 +1,41 @@
+{% extends 'master.html' %}
+
+{% load cloudinary %}
+{% load static %}
+
+{% block content %}
+
+
+<h1>WELCOME TO FAMILY NEWS AUDIO CENTER</h1>
+
+<p class="lead">
+  This is audio dashboard showing all the audio files and transcriptions that you have
+  uploaded to the family news database.
+</p>
+
+
+<table class="table table-hover table-borderless">
+  <thead>
+    <tr>
+      <th scope="col">Audio File</th>
+      <th scope="col">Uploaded at</th>
+      <th scope="col">Transcription File</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    {% for i in audio %}
+          <tr>
+              <td><a href="{{i.file.url}}">{{i.file.url}}</a></td>
+              <td>{{ i.date_created }}</td>
+            <td><a href="{{i.message.url}}">{{i.message.url}}</a></td>
+          </tr>
+        {% empty %}
+          <tr>
+            <td colspan="3">No data.</td>
+          </tr>
+        {% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}

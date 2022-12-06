@@ -1,0 +1,43 @@
+{% extends 'master.html' %}
+{%load crispy_forms_tags %}
+{% block content %}
+
+<h3>How to upload files Successfully</h3> <br>
+<p >
+To Successfully upload to the family news database you need an audio file and equivalent transcription file.
+Below we shall guide you on how to successfully create these two items
+<p>
+<b>Audio File</b><br>
+The audio file can be downloaded from WhatsApp, or user can record
+using phone. The file can be of any format that is mp3, mp4, ogg
+as long as it is an audio or video file
+</p>
+
+<p>
+  <b>Transcription</b><br>
+  The user has to provide transcription of the audio file.
+  Upload the audio file to any speech to text or audio transcription sites on the internet. There are many out there, common examples include  <a href="https://otter.ai/">Otter,</a> <a href="https://transkriptor.com/"> Transkriptor.</a>
+  Or any other you may prefer.
+  Alternatively you could use dictate function available in Microsft word
+  to transcribe your audio file. You can learn more about this approach from <a href="https://www.popsci.com/diy/transcribe-audio-microsoft-word/">Here.</a>
+  After selecting your preferred transcription method and successfully transcribing the audio file. Save the transcription into a word document, text file or PDF.
+</p>
+
+<p>
+<b>Upload Now</b><br>
+After going through the above steps you are now ready to upload using form below.
+<ul>
+     <li>
+       Use the dropdown menu to select name corresponding to your username. Your username  is shown
+       at the top of this page below the navigation bar
+     </li>
+     <li>Upload the audio file you created to the "Audio file" Field</li>
+     <li>Upload the word document, or text file or PDF to the "Transcription File" field</li>
+     <li>
+       Double check your information and then click Submit.
+     </li>
+
+   </ul>
+
+</p>
+{% endblock %}

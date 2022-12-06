@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    background-color: #f1f1f1;
+    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+  
+  
+  button {
+    transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+  }
+  
+  button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+  
+  .container {
+    width: 80%;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 20px;
+    margin: 40px auto;
+  }
+  
+  form {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ff9900;
+    width: auto;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  table td,
+  table th {
+    border: 1px solid #eceeef;
+    padding: 5px 8px;
+    text-align: left;
+  }
+  table thead {
+    border-bottom: 2px solid #eceeef;
+  }
+  
