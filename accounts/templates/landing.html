@@ -1,0 +1,54 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<style>
+    body {background: #f7f7f7;}
+    #mydiv {margin-top: 150px;}
+    p {
+        font-size: large;
+        font-weight: bold;
+    }
+
+    h3 {
+        
+        font-weight: bold;
+    }
+
+
+    /* body {background: #c7eef5;} */
+
+  </style>
+  
+  
+
+
+<div class="h-100 d-flex align-items-center flex-column" id="mydiv">
+    <!-- <div style="background:red"> -->
+        <h3> Welcome To Kin-Keepers</h3>
+        <p class="lead">
+            
+            Augmented Inteligence For Seniors and Carerers</p>
+     
+      <p>
+        CHOOSE YOUR DESTINATION
+      </p>
+
+
+    <div class="d-flex flex-row">
+        
+        
+    <div class="p-2 bd-highlight">
+        <a class="btn btn-primary" href="#" role="button">FAMILY CIRCLE</a>
+    </div>
+    <div class="p-2 bd-highlight">
+        <a class="btn btn-primary" href="{% url 'family_news'%}" role="button">FAMILY NEWS</a>
+    </div>
+    
+</div>
+    
+  </div>
+
+{% endblock %}

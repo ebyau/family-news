@@ -12,6 +12,15 @@ from .decorators import unauthenticated_user, allowed_users, admin_only
 
 
 # Create your views here.
+def landing_page(request):
+
+    return render(request,'landing.html')
+
+def family_news(request):
+    
+    return render(request,'welcome.html')
+
+
 @login_required
 @allowed_users(['admin'])
 def admin_dashboard(request):
